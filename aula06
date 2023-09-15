@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+            alert ("Calculador de médias:");
+            //Pedir quatro notas para o usuário
+            var n1 = parseFloat (prompt ("Digite a primeira nota: "));
+            var n2 = parseFloat (prompt ("Digite a segunda nota: "));
+            var n3 = parseFloat (prompt ("Digite a terceira nota: "));
+            var n4 = parseFloat (prompt ("Digite a quarta nota: "));
+            //Calcular a média do aluno
+            var media = (n1+n2+n3+n4)/4;
+            //Dizer se o aluno foi aprovado ou reprovado com uma mensagem
+            if (media > 5) {
+            alert ("Parabéns você foi aprovado! Sua média foi de " + media);
+            }
+            else {
+            alert ("Não foi dessa vez, você foi reprovado. Sua média foi de " + media);
+            }
+        </script>
+
+    </body>
+</html>
