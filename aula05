@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+           //Pedir para o usuário digitar dois números
+           var n1 = parseFloat (prompt ("Digite um número: "));
+           var n2 = parseFloat (prompt ("Digite outro número: "));
+           //Mostar um boolean dizendo se a média e maior que 5
+           var media = (n1+n2) / 2;
+           alert (media > 5);
+        </script>
+    </body>
+</html>
