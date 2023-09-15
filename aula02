@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+            //Pedir para o usuário digitar 2 números e mostrar o resultado da soma
+            //Digite um número
+            var n1 = prompt ("Digite um número:");
+            n1 = parseFloat (n1);
+            //Digite outro número
+            var n2 = prompt ("Digite outro número:");
+            n2 = parseFloat (n2);
+            //Mostrar a soma dos números digitados
+            alert (n1+n2);
+        </script>
+    </body>
+</html>
