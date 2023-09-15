@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+            //Pedir para o usuário digitar 2 números e calcular a média
+            var n1 = prompt ("Digite um número:");
+            n1 = parseFloat (n1);
+
+            var n2 = prompt ("Digite outro número:");
+            n2 = parseFloat (n2);
+
+            //Cálculo da média entre os 2 números
+            var media = (n1+n2) / 2;
+            alert (media);
+        </script>
+    </body>
+</html>
