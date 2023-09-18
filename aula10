@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+            //Pedir dois números, um para cada jogador entre 0 ou 1
+            var nJogador1 = parseInt (prompt ("Jogador n°1 digite 0 ou 1: "));
+            var nJogador2 = parseInt (prompt ("Jogador n°2 digite 0 ou 1: "));
+            //Se os jogadores digitarem números iguais mostrar mensagem de empate e o motivo
+            if (nJogador1===nJogador2) {
+               alert ("Números iguais, empate!");
+            }
+            else {
+                //Converter texto em números inteiros e fazer o sorteio do número
+                var nSorteado = parseInt (Math.random() * 2);
+                    //Mostrar o número sorteado e dizer qual jogador venceu
+                    if ((nSorteado === 0 && nJogador1 < nJogador2) || (nSorteado === 1 && nJogador1 > nJogador2)) {
+                    alert ("Número sorteado foi " + nSorteado + ", Jogador 1 venceu!");
+                    }
+                    else {
+                        alert ("Número sorteado foi " + nSorteado + ", Jogador 2 venceu!");
+                    }
+            }
+        </script>
+    </body>
+</html>
