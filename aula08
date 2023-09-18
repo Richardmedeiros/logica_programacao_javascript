@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+            //Digitar dois números
+            var n1 = parseFloat (prompt ("Digite um número: "));
+            var n2 = parseFloat (prompt ("Digite outro número: "));
+            //Calcular a média de dois números
+            var media = (n1 + n1) / 2;
+            //Mostarar se o aluno foi aprovado e reprovado usando operador lógico
+            if (media > 5 && n1 > 0 && n2 > 0) {
+                alert ("Parabéns você foi aprovado!");
+            }
+
+            else {
+                alert ("Você foi reprovado.");
+            }
+
+        </script>
+    </body>
+</html>
