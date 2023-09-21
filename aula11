@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+            //Pedir para o usuário um número
+            var numero = parseFloat (prompt ("Digite um número: "));
+            //Variável de indice é igual a 1
+            var indice = 1;
+            //Calcular a tabuada do número digitado até 1000
+            while (indice <=1000) {
+                document.write (numero + " x " + indice + " = " + (numero * indice) + );
+                indice = indice + 1;
+            }
+            //Mensagem de fim do loop
+            document.write ("Fim do loop.");
+        </script>
+
+    </body>
+</html>
