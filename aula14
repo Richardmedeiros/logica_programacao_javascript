@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+        //Calcular os anos de 1004 até 2017 de quatro em quatro anos
+        var ano = 1004;
+        alert ("Esse programa conta os anos à partir de 1004 até 2017 de quatro em quatro anos.")
+        while (ano <= 2017) {
+            document.write (ano + "<br>");
+            if (ano % 4 && ano > 1004) {
+            }
+            ano = ano + 4;
+        }
+        </script>
+    </body>
+</html>
