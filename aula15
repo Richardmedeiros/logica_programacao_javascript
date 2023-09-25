@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+        //Calcular os anos bissextos desde 1004 até 2023
+        var ano = 1004;
+        alert ("Esse programa conta os anosbissextos de 1004 até 2017.")
+        while (ano <= 2023) {
+                //O ano bissexto não pode ser múltiplo de 100 mas é múltiplo de 400
+                if (!(ano % 100 === 0) || (ano % 400 === 0)) {
+                document.write (ano + "<br>");
+            }
+            else {
+                document.write (ano + " Esse ano não é bissexto <br>");
+            }
+            ano += 4;
+        }
+        </script>
+    </body>
+</html>
