@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+            //Pedir um número para o usuário
+            var numero = parseFloat (prompt ("Digite um número: "));
+            //Calcular o número até 1000 com comando for
+            for (var indice = 1; indice <= 1000; indice = indice + 1) {
+                document.write (numero + " x " + indice + " = " + (numero * indice) + "<br>");
+            }
+            //Mostrar mensagem do fim do loop
+            document.write ("Fim do loop.");
+        </script>
+    </body>
+</html>
