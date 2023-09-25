@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <script>
+            //Digitar um número
+            var numero = parseFloat (prompt ("Digite um número: "));
+            //Valor inicial da variável indice
+            var indice = 0
+            //Cáluco até 100 do número digitado pelo usuário usando o comando while e colocar um traço abaixo de cada dezena múltipla de 10
+            while (indice <=100) {
+                document.write (numero + " x " + indice + " = " + (numero * indice) + "<br>");
+                if (indice % 10 === 0 && indice > 0) {
+                    document.write ("<hr>");
+                }
+            indice = indice + 1;
+            }
+        </script>
+    </body>
+</html>
