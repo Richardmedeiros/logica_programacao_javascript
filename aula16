@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        //Botões para pedir um número e limpar a tabuada
+        <button onclick = 'mostrarTabuada()'>Criar Tabuada</button>
+        <button onclick = 'limparTabuada()'>Limpar Tabuada</button>
+        //Div chamada output
+        <div id = 'output'></div>
+
+        <script>
+            //Calcular a tabuada com função tipo void
+            function mostrarTabuada() {
+                var numero = prompt ("Digite um número: ");
+                numero = parseFloat(numero);
+                
+                limparTabuada();
+                
+                var indice = 1;                
+
+                while (indice <= 100) {
+                    mensagem += numero + " x " + indice + " = " + (numero * indice) + "<br>";
+                    indice++;
+                    
+                }
+                output.innerHTML = mensagem;
+            }
+                function limparTabuada() {
+                mensagem = '';
+                output.innerHTML = mensagem;
+            }
+
+            var output = document.querySelector('#output');
+            var mensagem = '';
+
+                        
+        </script>
+    </body>
+</html>
