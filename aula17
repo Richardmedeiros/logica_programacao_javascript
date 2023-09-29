@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = 'utf-8'>
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        //Fazer quatro botões para operações aritméticas básicas
+        <button onclick = 'soma()'>+</button>
+        <button onclick = 'subtracao()'>-</button>
+        <button onclick = 'multiplicacao()'>x</button>
+        <button onclick = 'divisao()'>/</button>
+        
+        <div id = 'output'></div>
+        //Calcular o número digitado e fazer as operações com o resultado de acordo com a operação aritmética solicitada
+        <script>
+            var numero = parseFloat(prompt('Digite um número: '));
+            escreve();
+
+            function escreve() {
+                var output = document.querySelector('#output');
+                output.innerHTML = numero;
+            }
+
+            function soma() {
+                var nSoma = parseFloat(prompt('Digite um número para soma: '));
+                numero = numero + nSoma;
+                escreve();
+            }
+
+            function subtracao() {
+                var nSub = parseFloat(prompt('Digite um número para subtração: '))
+                numero = numero - nSub;
+                escreve();
+            }
+
+            function multiplicacao() {
+                var nMulti = parseFloat(prompt('Digite um número para multiplicação: '));
+                numero = numero * nMulti;
+                escreve();
+            }
+
+            function divisao() {
+                var nDivi = parseFloat(prompt('Digite um número para divisão: '));
+                numero = numero / nDivi;
+                escreve();
+            }
+            
+        </script>
+    </body>
+
+</html>
