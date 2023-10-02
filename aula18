@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        //Um botão para cada função aritmética
+        <button onclick = "calcular('+')">+</button>
+        <button onclick = "calcular('-')">-</button>
+        <button onclick = "calcular('*')">x</button>
+        <button onclick = "calcular('/')">/</button>
+
+        <div id = 'output'></div>
+
+        <script>
+            var n1 = parseFloat(prompt('Digite um número: '));
+            escreve();
+
+                function escreve() {
+                    var output = document.querySelector('#output');
+                    output.innerHTML = n1;
+                }
+                //Calcular cada opção aritmética com a função switch case
+                    function calcular(simbolo) {
+                        var n2 = parseFloat(prompt('Digite outro número:'));
+                        
+                        switch (simbolo) {
+                            case '+':
+                            n1 += n2;
+                            break;
+                            case '-':
+                            n1 -= n2;
+                            break;
+                            case '*':
+                            n1 *= n2;
+                            break;
+                            case '/':
+                            n1 /= n2;
+                        }
+                        escreve();
+                    }
+        </script>
+    </body>
+</html>
