@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lógica de Programação com Javascript</title>
+        <meta charset = "utf-8">
+    </head>
+    <body>
+        <h1>Lógica de Programação com Javascript</h1>
+        <button onclick = 'calcArea(altura, largura)'>Calcular área</button>
+        <script>
+            var altura = parseFloat(prompt('Digite a altura do Retângulo: '));
+            var largura = parseFloat(prompt('Digite a largura do Retângulo: '));
+
+            function calcArea(a, l) {
+                alert('A área total do retângulo é: ' + (a * l));
+            }
+        </script>
+    </body>
+</html>
